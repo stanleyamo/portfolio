@@ -5,6 +5,10 @@
     margin: 20px 170px;
 }
 
+.navbar img{
+    width: 120px;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -13,9 +17,19 @@
     font-size: 20px;
 }
 
+.nav-menu a {
+   text-decoration: none;
+    color: #000000;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    color: #b923e1;
+}
+
 .nav-connect {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 20px;
     border-radius: 50px;
     background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102%);
     font-size: 22px;
@@ -28,12 +42,12 @@
 }
 
 .nav-connect:hover {
-    background: transparent; /* remove gradient on hover */
-    color: #b923e1; /* make text visible */
-    border: 2px solid #b923e1; /* outline keeps shape */
+    background: transparent;
+    color: #b923e1;
+    border: 2px solid #b923e1;
     transform: scale(1.05);
 }
-.nav-connect:active {}
+
 .dark-mode-btn {
     position: fixed;
     bottom: 20px;
