@@ -14,14 +14,22 @@
 }
 
 .nav-connect {
+    display: inline-block;
     padding: 20px 40px;
     border-radius: 50px;
-    background: linear-gradient(267deg, #da7c25 0.36%, #B923e1 102.0%);
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102%);
     font-size: 22px;
+    color: white; /* text visible */
+    text-decoration: none;
     cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    user-select: none;
 }
 
 .nav-connect:hover {
+    background: transparent; /* remove gradient on hover */
+    color: #b923e1; /* make text visible */
+    border: 2px solid #b923e1; /* outline keeps shape */
     transform: scale(1.05);
-    transition: 1s;
 }

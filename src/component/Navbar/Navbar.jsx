@@ -12,7 +12,13 @@ const Navbar = () => {
                 <li>Portfolio</li>
                 <li>Contact</li>
             </ul>
-            <div className="nav-connect">Connect With Me</div>
+
+            <div>
+                <a href="#" className="nav-connect">
+                    Connect With Me
+                </a>
+            </div>
+
         </div>
     );
 };
