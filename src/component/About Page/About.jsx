@@ -7,7 +7,6 @@ const About = () => {
         <div className="about">
             <div className="about-title">
                 <h1>About me</h1>
-                <img src="" alt="theme_pattern"/>
             </div>
 
             <div className="about-section">
@@ -16,8 +15,8 @@ const About = () => {
                 </div>
                 <div className="about-right">
                     <div className="about-para">
-                        <p>mzhhmm</p>
-                        <p>zmmzhmhz</p>
+                        <p>I’m a software engineer passionate about building clean, efficient, and user-friendly applications. I enjoy solving challenging problems and continuously learning new technologies to create meaningful digital experiences.</p>
+                        <p>I love turning ideas into functional applications. With a focus on modern web development, I aim to build projects that are both intuitive and impactful.</p>
                     </div>
                     <div className="about-skills">
                         <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"70%"}}/> </div>
