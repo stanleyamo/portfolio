@@ -1,7 +1,7 @@
 import React from 'react';
-import './Hero.css'
+import './Landing.css'
 
-const Hero = () => {
+const Landing = () => {
     return (
         <div className='hero'>
             <img src="" alt="profile"/>
@@ -15,4 +15,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Landing;
