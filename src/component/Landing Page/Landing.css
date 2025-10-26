@@ -63,7 +63,6 @@
     border-color: #b415ff;
 }
 
-/*tablet responsive*/
 @media (max-width: 768px) {
     .hero img {
         width: 130px;
@@ -87,7 +86,6 @@
     }
 }
 
-/*smartphone responsive*/
 @media (max-width: 480px) {
     .hero {
         margin-top: 80px;

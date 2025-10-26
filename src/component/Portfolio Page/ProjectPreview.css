@@ -1,0 +1,115 @@
+.project-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+    color: #000;
+}
+
+body.dark-mode .project-section {
+    background: #111;
+    color: #fff;
+}
+
+.project-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project-subtitle {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+body.dark-mode .project-subtitle {
+    color: #ccc;
+}
+
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.project-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid transparent;
+    background: #fff linear-gradient(white, white),
+    linear-gradient(267deg, #da7c25 0.36%, #b923e1 102%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(185, 35, 225, 0.4);
+}
+
+.project-iframe,
+.project-image {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-iframe {
+    pointer-events: auto;
+}
+
+.project-iframe::-webkit-scrollbar {
+    display: none;
+}
+
+.project-iframe {
+    scrollbar-width: none;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project-info p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+@media (max-width: 900px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        max-width: 90%;
+        flex: 1 1 100%;
+        height: 400px;
+    }
+}
