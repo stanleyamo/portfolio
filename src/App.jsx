@@ -7,8 +7,12 @@ const App = () => {
     return (
         <>
             <Navbar/>
-            <Landing/>
-            <About/>
+            <section id="home">
+                <Landing/>
+            </section>
+            <section id="about">
+                <About/>
+            </section>
         </>
     );
 };
