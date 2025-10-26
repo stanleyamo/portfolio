@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import './Navbar.css'
 import logo from '../../assets/logo.svg';
-import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -14,10 +13,10 @@ const Navbar = () => {
         <div className="navbar">
             <img src={logo} alt="logo"/>
             <ul className="nav-menu">
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/About'>About Me</Link></li>
-                <li><Link to='/'>Services</Link></li>
-                <li><Link to='/'>Portfolio</Link></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
 
