@@ -62,3 +62,65 @@
 .hero-resume:hover {
     border-color: #b415ff;
 }
+
+/*tablet responsive*/
+@media (max-width: 768px) {
+    .hero img {
+        width: 130px;
+        height: 130px;
+        margin-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/*smartphone responsive*/
+@media (max-width: 480px) {
+    .hero {
+        margin-top: 80px;
+        gap: 20px;
+    }
+
+    .hero img {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .hero p {
+        width: 85%;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .hero-connect {
+        padding: 15px 30px;
+    }
+
+    .hero-resume {
+        padding: 15px 40px;
+    }
+}

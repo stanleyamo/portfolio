@@ -1,9 +1,11 @@
 import React, { useState, useEffect} from 'react';
 import './Navbar.css'
 import logo from '../../assets/logo.svg';
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         document.body.classList.toggle("dark-mode", darkMode);
@@ -12,12 +14,17 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <img src={logo} alt="logo"/>
-            <ul className="nav-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
+
+            <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
+            </div>
+
+            <ul className={menuOpen ? "nav-menu open" : "nav-menu"}>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
 
             <div>
