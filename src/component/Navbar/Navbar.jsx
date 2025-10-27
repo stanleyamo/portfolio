@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import './Navbar.css'
+import './Darkmode.css'
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {

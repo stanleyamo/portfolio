@@ -1,0 +1,47 @@
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-menu a {
+    color: #f5f5f5;
+}
+
+body.dark-mode .nav-menu a::after {
+    background-color: #da7c25;
+}
+
+body.dark-mode .nav-menu a:hover {
+    color: #b923e1 !important;
+}
+
+body.dark-mode .nav-connect {
+    background: linear-gradient(267deg, #b923e1 0.36%, #da7c25 102%);
+    color: white;
+    border: 2px solid transparent;
+}
+
+body.dark-mode .nav-connect:hover {
+    background: transparent;
+    color: #b923e1;
+    border-color: #b923e1;
+}
+
+body.dark-mode .hamburger svg {
+    color: #f5f5f5;
+}
+
+body.dark-mode .nav-menu {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .dark-mode-btn {
+    background-color: #f5f5f5;
+    color: #111;
+}
