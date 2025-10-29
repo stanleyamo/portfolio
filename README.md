@@ -1,16 +1,40 @@
-# React + Vite
+# 🌐 Stanley Amo-Brown — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio built with **React.js**!  
+This website showcases my projects, skills, and experience as a software developer, and serves as my digital space to connect and share what I build.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Responsive Design** — Works seamlessly on all screen sizes.  
+- **Dark Mode Toggle** — Smooth theme switch for better viewing comfort.  
+- **Interactive Navbar** — Includes a mobile-friendly hamburger menu.  
+- **Live Project Previews** — Showcases real-time site demos with smooth slides.  
+- **Modern UI/UX** — Clean, minimal, and professional layout.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** — Frontend framework  
+- **CSS3** — Styling and animations  
+- **JavaScript (ES6+)** — Interactivity  
+- **React Icons** — Icon design  
+- **VS Code** — Development environment  
+
+---
+
+## 📁 Sections Included
+
+- **Home** — Introduction and hero section  
+- **About Me** — Short bio and skill levels  
+- **Services** — What I offer as a developer  
+- **Project Preview** — Real-time website previews and project cards  
+- **Contact** — Links and social connection  
+
+---
+
+## 🌗 Dark Mode
+
+This portfolio comes with a custom **dark mode** feature that enhances the overall look and provides a smooth user experience for night viewing.
