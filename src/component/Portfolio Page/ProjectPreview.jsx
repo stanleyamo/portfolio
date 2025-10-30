@@ -19,7 +19,7 @@ const projects = [
         name: "Up Coming Project",
         link: "https://www.figma.com/design/zfk2nQqVPKUNObVmHOrrrr/Referral-UI-UX?node-id=0-1&t=rTzCvVVQMUSjFHxP-1",
         description:
-            "A modern website for a nursing school with course info, news, and admissions.",
+            "A modern mobile app for hospital referrals.",
         images: [
             "/images/app/img1.png",
             "/images/app/img2.png",
