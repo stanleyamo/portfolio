@@ -1,21 +1,100 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ProjectPreview.css";
 
-const ProjectPreview = () => {
-    const projects = [
-        {
-            title: "Spring of Hope Assisted Living",
-            url: "https://www.springofhope.co/",
-            description:
-                "A modern residential care service website for older adults and people with disabilities.",
-        },
-        {
-            title: "Upcoming Project",
-            url: "https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870",
-            description: "A new project currently under construction. Stay tuned!",
-        },
-    ];
+const projects = [
+    {
+        name: "Spring of Hope",
+        link: "https://www.springofhope.co/",
+        description:
+            "Responsive non-profit site with event updates, donations, and outreach.",
+        images: [
+            "/images/soh/soh1.png",
+            "/images/soh/soh2.png",
+            "/images/soh/soh3.png",
+            "/images/soh/soh4.png",
+            "/images/soh/soh5.png",
+        ],
+    },
+    {
+        name: "Up Coming Project",
+        link: "https://www.figma.com/design/zfk2nQqVPKUNObVmHOrrrr/Referral-UI-UX?node-id=0-1&t=rTzCvVVQMUSjFHxP-1",
+        description:
+            "A modern website for a nursing school with course info, news, and admissions.",
+        images: [
+            "/images/app/img1.png",
+            "/images/app/img2.png",
+            "/images/app/img3.png",
+            "/images/app/img4.png",
+            "/images/app/img5.png",
+        ],
+    },
+];
 
+// ✅ Reusable modal
+function Modal({ message, onClose }) {
+    return (
+        <div className="modal-overlay">
+            <div className="modal-content">
+                <p>{message}</p>
+                <button onClick={onClose} className="close-btn">
+                    OK
+                </button>
+            </div>
+        </div>
+    );
+}
+
+function ProjectCard({ project }) {
+    const [current, setCurrent] = useState(0);
+    const [showModal, setShowModal] = useState(false);
+
+    useEffect(() => {
+        if (project.images.length <= 1) return;
+        const interval = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % project.images.length);
+        }, 2500);
+        return () => clearInterval(interval);
+    }, [project.images.length]);
+
+    const handleVisitClick = (e) => {
+        if (!project.link || project.link === "#") {
+            e.preventDefault();
+            setShowModal(true);
+        }
+    };
+
+    return (
+        <div className="project-card">
+            <img
+                src={project.images[current]}
+                alt={project.name}
+                className="project-image"
+            />
+            <div className="project-info">
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={handleVisitClick}
+                    className="visit-btn"
+                >
+                    Visit Site
+                </a>
+            </div>
+
+            {showModal && (
+                <Modal
+                    message="This project link is not available yet."
+                    onClose={() => setShowModal(false)}
+                />
+            )}
+        </div>
+    );
+}
+
+export default function ProjectPreview() {
     return (
         <section className="project-section">
             <h2 className="project-title">Project Showcase</h2>
@@ -25,30 +104,9 @@ const ProjectPreview = () => {
 
             <div className="project-container">
                 {projects.map((project, index) => (
-                    <div className="project-card" key={index}>
-                        {project.url ? (
-                            <iframe
-                                src={project.url}
-                                title={project.title}
-                                className="project-iframe"
-                                loading="lazy"
-                            ></iframe>
-                        ) : (
-                            <img
-                                src={project.url}
-                                alt="Under Construction"
-                                className="project-image"
-                            />
-                        )}
-                        <div className="project-info">
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                        </div>
-                    </div>
+                    <ProjectCard key={index} project={project} />
                 ))}
             </div>
         </section>
     );
-};
-
-export default ProjectPreview;
+}

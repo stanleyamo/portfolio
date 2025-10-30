@@ -14,7 +14,7 @@ body.dark-mode .nav-menu a {
 }
 
 body.dark-mode .nav-menu a::after {
-    background-color: #da7c25;
+    background-color: #b923e1;
 }
 
 body.dark-mode .nav-menu a:hover {
