@@ -28,7 +28,7 @@ const Navbar = () => {
             </ul>
 
             <div>
-                <a href="#" className="nav-connect">
+                <a href="#contact" className="nav-connect">
                     Connect With Me
                 </a>
 
