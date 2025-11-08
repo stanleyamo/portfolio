@@ -1,24 +1,26 @@
-.navbar{
+.navbar {
     display: flex;
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     background-color: #fff;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
-    width: 96%;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.navbar img {
+    width: 120px;
 }
 
 .hamburger {
     display: none;
     cursor: pointer;
     z-index: 1001;
-}
-
-.navbar img{
-    width: 120px;
 }
 
 .nav-menu {
@@ -57,16 +59,17 @@
 
 .nav-connect {
     display: inline-block;
-    padding: 20px;
+    padding: 12px 24px;
     border-radius: 50px;
     background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102%);
-    font-size: 22px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
     cursor: pointer;
     border: 2px solid transparent;
     transition: all 0.4s ease;
     user-select: none;
+    white-space: nowrap;
 }
 
 .nav-connect:hover {
@@ -76,6 +79,7 @@
     transform: scale(1.05);
 }
 
+/* --- Dark Mode Button --- */
 .dark-mode-btn {
     position: fixed;
     bottom: 20px;
@@ -103,9 +107,10 @@ body.dark-mode .dark-mode-btn {
     color: #111;
 }
 
+/* --- Mobile View --- */
 @media (max-width: 768px) {
     .navbar {
-        padding: 15px 20px;
+        padding: 15px 25px;
     }
 
     .hamburger {
@@ -117,7 +122,7 @@ body.dark-mode .dark-mode-btn {
         top: 0;
         right: -100%;
         height: 100vh;
-        width: 70%;
+        width: 75%;
         background: #fff;
         flex-direction: column;
         justify-content: center;
@@ -136,14 +141,15 @@ body.dark-mode .dark-mode-btn {
     }
 
     .nav-connect {
-        font-size: 20px;
-        padding: 14px 25px;
+        font-size: 18px;
+        padding: 10px 22px;
     }
 }
 
+/* --- Small Mobile View --- */
 @media (max-width: 480px) {
     .navbar {
-        margin: 10px 20px;
+        padding: 12px 20px;
     }
 
     .navbar img {
@@ -152,25 +158,11 @@ body.dark-mode .dark-mode-btn {
 
     .hamburger {
         display: block;
-        z-index: 2001;
     }
 
     .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
         width: 80%;
-        height: 100vh;
-        background: #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 30px;
-        transition: right 0.4s ease;
-    }
-
-    .nav-menu.open {
-        right: 0;
     }
 
     .nav-menu li {
@@ -178,8 +170,8 @@ body.dark-mode .dark-mode-btn {
     }
 
     .nav-connect {
-        font-size: 18px;
-        padding: 12px 25px;
+        font-size: 17px;
+        padding: 10px 20px;
     }
 
     .dark-mode-btn {
@@ -187,8 +179,4 @@ body.dark-mode .dark-mode-btn {
         height: 40px;
         font-size: 18px;
     }
-
-    /*body.dark-mode .hamburger {*/
-    /*    color: #f5f5f5 !important;*/
-    /*}*/
 }
