@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'
-import random from '../../assets/random.jpg'
+import me from '../../assets/me.jpg'
 
 const About = () => {
     return (
@@ -11,7 +11,7 @@ const About = () => {
 
             <div className="about-section">
                 <div className="about-left">
-                    <img src={random} alt="profile"/>
+                    <img src={me} alt="profile"/>
                 </div>
                 <div className="about-right">
                     <div className="about-para">
@@ -20,7 +20,7 @@ const About = () => {
                     </div>
                     <div className="about-skills">
                         <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"70%"}}/> </div>
-                        <div className="about-skill"><p>React JS</p><hr style={{width:"30%"}}/> </div>
+                        <div className="about-skill"><p>React JS</p><hr style={{width:"80%"}}/> </div>
                         <div className="about-skill"><p>JavaScripts</p><hr style={{width:"50%"}}/> </div>
                         <div className="about-skill"><p>Python</p><hr style={{width:"80%"}}/> </div>
                         <div className="about-skill"><p>Dart</p><hr style={{width:"50%"}}/> </div>

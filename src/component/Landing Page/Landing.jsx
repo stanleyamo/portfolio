@@ -1,11 +1,10 @@
 import React from 'react';
 import './Landing.css'
-import avatar from '../../assets/avatar.jpg'
 
 const Landing = () => {
     return (
         <div className='hero'>
-            <img src={avatar} alt="profile"/>
+            {/*<img src={} alt="profile"/>*/}
             <h1><span>I'm Stanley Amo-Brown,</span> software developer based in Ghana.</h1>
             <p>I'm a software developer from Accra</p>
 
