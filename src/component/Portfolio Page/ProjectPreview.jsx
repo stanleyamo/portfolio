@@ -17,15 +17,16 @@ const projects = [
     },
     {
         name: "Up Coming Project",
-        link: "https://www.figma.com/design/zfk2nQqVPKUNObVmHOrrrr/Referral-UI-UX?node-id=0-1&t=rTzCvVVQMUSjFHxP-1",
+        link: "",
         description:
-            "A modern mobile app for hospital referrals.",
+            "A modern ecommerce website.",
         images: [
-            "/images/app/img1.png",
-            "/images/app/img2.png",
-            "/images/app/img3.png",
-            "/images/app/img4.png",
-            "/images/app/img5.png",
+            "/images/store/store1.png",
+            "/images/store/store2.png",
+            "/images/store/store3.png",
+            "/images/store/store4.png",
+            "/images/store/store5.png",
+            "/images/store/store6.png",
         ],
     },
 ];
