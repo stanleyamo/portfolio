@@ -21,7 +21,6 @@ This website showcases my projects, skills, and experience as a software develop
 - **CSS3** — Styling and animations
 - **JavaScript (ES6+)** — Interactivity
 - **React Icons** — Icon design
-- **VS Code** — Development environment
 
 ---
 
