@@ -24,6 +24,13 @@
     z-index: -1;
 }
 
+.about-left img {
+    width: 1200px;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 .about-section {
     display: flex;
     gap: 80px;
@@ -33,6 +40,13 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+}
+
+.category-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000000;
 }
 
 .about-para {
@@ -109,6 +123,7 @@
     transform: scale(1.12);
     transition: 0.5s;
 }
+
 
 /*tablet reponsive*/
 @media (max-width: 768px) {
